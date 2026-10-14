@@ -3,7 +3,6 @@ import { Avatar, Box, Button, Card, Divider, Stack } from "@mui/material";
 import { useApp } from "../context/AppContext";
 import { initials } from "./Navbar";
 
-// Inline "What's on your mind?" card — opens the Create Post modal
 const Composer = ({ onCompose }) => {
   const { user: currentUser } = useApp();
   return (

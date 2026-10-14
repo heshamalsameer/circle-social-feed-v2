@@ -5,7 +5,6 @@ import { useApp } from "../context/AppContext";
 
 const routes = ["/", "/groups", null, "/marketplace", "/notifications"];
 
-// Mobile bottom navigation
 const BottomNav = () => {
   const { setComposerOpen, unreadCount } = useApp();
   const navigate = useNavigate();

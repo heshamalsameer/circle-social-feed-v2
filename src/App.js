@@ -38,7 +38,6 @@ const Layout = () => {
       sx={{ maxWidth: 1400, mx: "auto", px: { xs: 0, sm: 2 } }}
     >
       <Sidebar />
-      {/* key re-mounts the page so each route animates in */}
       <Box key={pathname} className="page-in" flex={6} minWidth={0} display="flex" gap={3}>
         <Outlet />
       </Box>
@@ -87,7 +86,6 @@ const Shell = () => {
 function App() {
   return (
     <AppProvider>
-      {/* HashRouter works on any static host (GitHub Pages, Netlify…) without extra config */}
       <HashRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
         <Shell />
       </HashRouter>

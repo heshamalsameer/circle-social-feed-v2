@@ -5,10 +5,8 @@ import grid from "../assets/posts/grid.jpg";
 import candy from "../assets/posts/candy.jpg";
 import neon from "../assets/posts/neon.jpg";
 
-// The signed-in (demo) user
 export const currentUser = { name: "Layla Haddad", handle: "@layla", color: "#1976d2" };
 
-// Sample feed — swap with your API later
 export const MenuList = [
   {
     id: 1,
@@ -109,7 +107,6 @@ export const trends = [
   { tag: "#ReactJS", posts: "3.9k posts" },
 ];
 
-/* ---------- data for the extra pages ---------- */
 export const friendRequests = [
   { id: "r1", name: "Yara Mansour", color: "#ab47bc", mutual: 12 },
   { id: "r2", name: "Karim Aziz", color: "#26a69a", mutual: 4 },

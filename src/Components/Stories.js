@@ -2,7 +2,6 @@ import { Add } from "@mui/icons-material";
 import { Box, Card, Typography } from "@mui/material";
 import { stories } from "../data/Data";
 
-// Horizontal stories strip (new section)
 const Stories = ({ onCompose }) => (
   <Box
     sx={{

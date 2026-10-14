@@ -17,7 +17,6 @@ const usePersisted = (key, fallback) => {
     try {
       localStorage.setItem(key, JSON.stringify(v));
     } catch {
-      /* ignore */
     }
   }, [key, v]);
   return [v, setV];
@@ -112,7 +111,6 @@ export const AppProvider = ({ children }) => {
       query,
       setQuery,
     }),
-    // eslint-disable-next-line react-hooks/exhaustive-deps
     [mode, user, posts, saved, friendsIds, joinedGroups, followedPages, cart, notifications, threads, prefs, toast, composerOpen, query]
   );
 

@@ -1,6 +1,5 @@
 import { Component } from "react";
 
-// Shows the error on screen instead of a blank white page
 export default class ErrorBoundary extends Component {
   state = { error: null };
   static getDerivedStateFromError(error) {
@@ -15,7 +14,6 @@ export default class ErrorBoundary extends Component {
         .filter((k) => k.startsWith("circle-"))
         .forEach((k) => localStorage.removeItem(k));
     } catch {
-      /* ignore */
     }
     window.location.reload();
   };

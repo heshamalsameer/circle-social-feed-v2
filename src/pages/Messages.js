@@ -24,7 +24,6 @@ const Messages = () => {
     if (!text.trim()) return;
     sendMessage(activeId, text.trim());
     setText("");
-    // fake reply with typing indicator
     const id = activeId;
     setTimeout(() => setTyping(true), 600);
     setTimeout(() => {
@@ -36,7 +35,6 @@ const Messages = () => {
   return (
     <Box flex={1} p={{ xs: 0, sm: 2 }} maxWidth={1100} mx="auto" width="100%">
       <Card sx={{ display: "flex", height: { xs: "calc(100vh - 64px - 72px)", md: "calc(100vh - 110px)" }, borderRadius: { xs: 0, sm: 4 } }}>
-        {/* thread list */}
         <Box sx={{ width: { xs: "100%", sm: 320 }, borderRight: 1, borderColor: "divider", display: { xs: mobileChat ? "none" : "block", sm: "block" }, overflowY: "auto" }}>
           <Typography variant="h6" p={2}>Chats</Typography>
           <List disablePadding>
@@ -59,7 +57,6 @@ const Messages = () => {
           </List>
         </Box>
 
-        {/* chat */}
         {active && (
           <Box flex={1} display={{ xs: mobileChat ? "flex" : "none", sm: "flex" }} flexDirection="column" minWidth={0}>
             <Stack direction="row" alignItems="center" gap={1.5} p={2} borderBottom={1} borderColor="divider">

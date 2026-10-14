@@ -11,7 +11,6 @@ body {
   overflow-x: hidden;
 }
 
-/* posts fade/slide in */
 @keyframes rise {
   from {
     opacity: 0;
@@ -22,7 +21,6 @@ body {
   animation: rise 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
-/* heart pop when liking */
 @keyframes pop {
   40% {
     transform: scale(1.35);
@@ -32,7 +30,6 @@ body {
   animation: pop 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-/* story ring */
 @keyframes ring-spin {
   to {
     transform: rotate(360deg);
@@ -48,7 +45,6 @@ body {
   }
 }
 
-/* route transition */
 @keyframes page-in {
   from {
     opacity: 0;
@@ -59,7 +55,6 @@ body {
   animation: page-in 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
-/* typing dots */
 @keyframes blink-dot {
   0%, 80%, 100% { opacity: 0.25; transform: translateY(0); }
   40% { opacity: 1; transform: translateY(-3px); }

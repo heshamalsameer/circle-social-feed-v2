@@ -1,6 +1,5 @@
 import { createTheme, alpha } from "@mui/material";
 
-// Keeps Material UI's default palette (primary blue #1976d2) — only shape, type and polish change.
 export const makeTheme = (mode) =>
   createTheme({
     palette: {

@@ -1,6 +1,5 @@
 import { Box, Typography } from "@mui/material";
 
-// Shared heading used by every inner page
 const PageHeader = ({ icon, title, subtitle, action }) => (
   <Box display="flex" alignItems="center" justifyContent="space-between" gap={2} flexWrap="wrap" mb={3}>
     <Box display="flex" alignItems="center" gap={1.5}>

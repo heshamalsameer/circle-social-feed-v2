@@ -61,7 +61,6 @@ const Settings = () => {
             try {
               Object.keys(localStorage).filter((k) => k.startsWith("circle-")).forEach((k) => localStorage.removeItem(k));
             } catch {
-              /* ignore */
             }
             window.location.reload();
           }}

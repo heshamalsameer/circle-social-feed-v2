@@ -2,7 +2,6 @@ import { TrendingUp } from "@mui/icons-material";
 import { Card, List, ListItemButton, ListItemText, Stack, Typography } from "@mui/material";
 import { trends } from "../data/Data";
 
-// New: trending tags
 const Trending = () => (
   <Card sx={{ p: 2 }}>
     <Stack direction="row" alignItems="center" gap={1} mb={0.5}>
